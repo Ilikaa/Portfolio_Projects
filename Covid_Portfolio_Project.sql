@@ -89,15 +89,6 @@ Group by continent
 order by Total_Death_Count desc
 --Asia stands at 3rd position
 
---THIS IS THE REAL COUNT, WILL DECIDE ON WHICH TO KEEP AT THE END
---Select location, max(cast(total_deaths as int)) as Total_Death_Count
---From Portfolio_Project.dbo.Covid_Deaths
---Where continent is null
---Group by location
---order by Total_Death_Count desc
-
---Asia stands at 5th position
-
 
 --GLOBAL NUMBERS
 

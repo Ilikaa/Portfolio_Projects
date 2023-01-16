@@ -1,3 +1,8 @@
+/*
+Covid 19 Data Exploration 
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+*/
+
 ---- checking if data is complete
 Select*
 From Portfolio_Project.dbo.Covid_Deaths
@@ -100,7 +105,7 @@ Group by date
 order by 1,2
 --1st death in the world reported on 23/1/2020
 --On 23/1/2020
---		Total global cases were 98
+--	Total global cases were 98
 --      Global death percentage was 1%
 
 
@@ -238,3 +243,6 @@ Create View Total_Cases_vs_Total_Deaths as
 Select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as Death_Percentage
 From Portfolio_Project.dbo.Covid_Deaths
 Where continent is not null
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

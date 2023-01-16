@@ -1,3 +1,6 @@
+/*
+Cleaning Data in SQL Queries
+*/
 
 --Checking data for completeness
 Select*
@@ -144,11 +147,11 @@ SET SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'Yes'
 WITH RowNumCTE AS
 (Select*,
 	   ROW_NUMBER() OVER(Partition by ParcelID,
-									  PropertyAddress,
-									  SalePrice,
-									  SaleDate,
-									  LegalReference
-					      Order by UniqueID) AS RowNumber
+					  PropertyAddress,
+					  SalePrice,
+					  SaleDate,
+					  LegalReference
+					Order by UniqueID) AS RowNumber
 From dbo.Nashville_Housing)
 
 Select*
